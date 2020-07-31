@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-color: #ff9a4b;
+  height: 50px;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+}
+.box {
+  width: 300px;
+  background-color: #eeeeee;
+  float: left;
+  padding: 10px;
+  position: relative;
+}
+.box span {
+  padding: 3px;
+  color: white;
+  background-color: #ff9a4b;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.box h3 {
+  margin: 15px 0 5px;
+}
+main .img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-size: cover;
+  background-position: bottom;
+}
+main .img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  background-position: bottom;
+}
+main .img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  background-position: bottom;
+}
+
+footer {
+  background-color: #aaaaaa;
+  height: 50px;
+}
+
+@media screen and (min-width: 769px) {
+
+  .box:nth-child(1),
+  .box:nth-child(2) {
+    margin-right: 30px;
+  }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 980px) {
+
+  body {
+    width: 980px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  main {
+    width: 100%;
+  }
+  .box {
+    width: 90%;
+    margin: 50px auto;
+    float: none;
+  }
+
+}
+
+
